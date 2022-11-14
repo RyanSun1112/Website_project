@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watermelon</title>
+</head>
+<body>
+    <style>
+/* button: <button> */
+/* .button: class */
+/* #button: class */
+
+/* <link rel="stylesheet" href="style.css"> -->*/
+        button {
+          background-color: red;
+          border:10;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        .group3{
+          background-color: orange;
+          border:10;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 10px 50px;
+          cursor: pointer;
+
+        }
+        .group1  {
+          background-color: hotpink;
+          border:10;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 100px;
+          cursor: pointer;
+        }
+        .group2 {
+            background-color: #FF0000;
+            box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+            color: #fff;
+            border:10;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 355px;
+            cursor: pointer;
+
+}
+        #number-1  {
+          background-color: #4CAF50;
+          border:10;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        .group1:hover {
+            background-color: hotpink;
+            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+            color: #fff;
+            transform: translateY(-7px);
+
+        }
+        .group2:hover{
+            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+            color: #fff;
+            transform: translateY(-7px);
+        }
+        .group3:hover{
+            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+            color: #fff;
+            transform: translateY(-7px);
+        }
+        
+        h1:hover {
+            color: aqua;
+        }
+        </style>
+</body>
+<h1 id = "title-1"> Counter =  </h1>
+<h1 id = "numberCounter"> 0 </h1>
+<button id = "number-1" class = "group1" type = "button" onclick= "myRest()"> Reset</button>
+<button id = "number-2" class = "group2" type = "button" onclick= "myDown()">GO DOWN</button>
+<button id = "number-3" class = "group3" type = "button" onclick= "myUp()"> GO UP</button>
+<script>
+    counter = 0;
+function myUp() {
+    //console.log("you clicked me");
+    //alert("you clicked me");
+    counter += 1;
+    document.getElementById("numberCounter").innerHTML = counter;
+    
+}
+function myDown() {
+    counter -= 1;
+    document.getElementById("numberCounter").innerHTML = counter;
+    
+}
+function myRest(){
+    counter = 0;
+    document.getElementById("numberCounter").innerHTML = counter;
+}
+
+    //const button = document.getElementById('number5');
+    //counter = 0;
+    //button.addEventListener('click', (event) => {
+      //  console.log('You click number4');
+      //  number5.classlist.remove('group1');
+      //  number5.classlist.add('group-2');
+      //  counter = 1;
+    //});
+    
+    //button.addEventListener('mouseout', (event) =>{
+    //    number5.classlist.remove('group-2');
+      //  number5.classlist.add('group1');
+    //}
+</script>
+</html>
